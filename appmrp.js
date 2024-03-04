@@ -19,8 +19,8 @@ app.get('/mrp', (req, res) => {
                                                             //that file is in since path is not absolute path but a relative path (dosent have full path listed)
 } ); //.get() method is used to listen for get requests
 
-app.get('/ROLEACCOUNTSPAYABLECLERK', (req, res) => {
-    res.sendFile('./ROLEACCOUNTSPAYABLECLERK.html', {root: __dirname});
+app.get('https://my-resume-project-one.vercel.app/ROLEACCOUNTSPAYABLECLERK', (req, res) => {
+    res.sendFile('ROLEACCOUNTSPAYABLECLERK.html');
 });
 
 app.get('/ROLEDATAENTRYCLERK1', (req, res) => {
